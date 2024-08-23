@@ -1,0 +1,83 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+   
+}
+
+.button-container {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.button {
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.primary-btn {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+.primary-btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 91, 187, 0.2);
+}
+
+.primary-btn:active {
+    background-color: #004085;
+    transform: translateY(1px);
+}
+
+.secondary-btn {
+    background-color: #6c757d;
+    color: #ffffff;
+}
+
+.secondary-btn:hover {
+    background-color: #5a6268;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(90, 98, 104, 0.2);
+}
+
+.secondary-btn:active {
+    background-color: #4e555b;
+    transform: translateY(1px);
+}
+
+.danger-btn {
+    background-color: #dc3545;
+    color: #ffffff;
+}
+
+.danger-btn:hover {
+    background-color: #c82333;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(200, 35, 51, 0.2);
+}
+
+.danger-btn:active {
+    background-color: #bd2130;
+    transform: translateY(1px);
+}
+
+.button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+}
