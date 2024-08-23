@@ -1,0 +1,18 @@
+[data-notification-count]{
+    position:relative;
+}
+
+[data-notification-count]::before{
+    content:attr(data-notification-count);
+    position:absolute;
+    top:-0.75em;
+    right:-0.75em;
+    width:1.5em;
+    height:1.5em;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color:red;
+    color:white;
+}
